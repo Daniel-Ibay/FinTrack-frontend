@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import RegisterForm from "@/components/sign up/Form";
+import Navigation from "@/components/sign up/Navigation.astro";
+---
+
+<Layout>
+  <Navigation />
+  <RegisterForm client:load/>
+</Layout>
+
+<script>
+	localStorage.removeItem("userStorage");
+	localStorage.removeItem("token");
+</script>

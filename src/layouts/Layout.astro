@@ -1,0 +1,31 @@
+---
+import '../styles/global.css'
+import ClientRouter from 'astro/components/ClientRouter.astro'
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>FinTrack</title>
+		<ClientRouter />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #fbf7f5;
+		overflow-x: hidden;
+	},
+	body {
+		margin: 0;
+		width: 100%;
+		min-width: 1000px;
+		height: 100%;
+	}
+</style>

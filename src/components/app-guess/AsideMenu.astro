@@ -1,0 +1,35 @@
+---
+import Logout from '@/assets/LogoutIcon.astro'
+---
+
+<nav class="p-4">
+  <div class="flex flex-col">
+    <section class="flex flex-row items-center gap-2 justify-between border-zinc-500 border-b-2 p-2 pb-6">
+      <picture class="rounded-full overflow-auto border-2 border-zinc-100">
+        <img src="/GuessIcon.jpg" width="48" height="48"/>
+      </picture>
+      <h1 class="font-mon text-xl font-bold text-zinc-100 truncate hover:cursor-default">Welcome Guess</h1>
+      <a href="/">
+        <picture class='hover:scale-110 hover:opacity-90 duration-500 '>
+          <Logout fill="#9e9e9e" class="w-[32px] h-[32px] hover:scale-110 duration-500"/>
+        </picture>
+      </a>
+    </section>
+    <section class="flex flex-col">
+      <div class="w-auto select-none">
+        <div class="border-b-2 h-[60px] pl-2 text-zinc-100 text-lg font-semibold border-zinc-500 hover:cursor-pointer hover:text-xl duration-150 hover:bg-zinc-500/10 hover:text-zinc-50 flex items-center">
+          <a class="h-full w-full flex items-center justify-center" href="/guess/movements">Movements</a>
+        </div>
+        <div class="border-b-2 h-[60px] pl-2 text-zinc-100 text-lg font-semibold border-zinc-500 hover:cursor-pointer hover:text-xl duration-150 hover:bg-zinc-500/10 hover:text-zinc-50 flex items-center">
+          <a class="h-full w-full flex items-center justify-center" href="/guess/goals">Goals</a>
+        </div>
+        <div class="border-b-2 py-4 pl-2 text-zinc-100 text-lg font-semibold border-zinc-500 hover:cursor-pointer hover:text-xl duration-150 hover:bg-zinc-500/10 hover:text-zinc-50">
+          <a class="h-full w-full flex items-center justify-center" href="/guess/visualizer">Visualizer</a>
+        </div>
+        <div class="border-b-2 py-4 pl-2 text-zinc-100 text-lg font-semibold border-zinc-500 hover:cursor-pointer hover:text-xl duration-150 hover:bg-zinc-500/10 hover:text-zinc-50">
+          <a class="h-full w-full flex items-center justify-center" href="/guess/50-30-20-rule">50/30/20 Rule</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</nav>

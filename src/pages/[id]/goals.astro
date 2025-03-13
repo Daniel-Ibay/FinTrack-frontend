@@ -1,0 +1,17 @@
+---
+import LayoutUserApplication from "@/layouts/LayoutUserApplication.astro";
+import GoalsSection from "@/components/app-user/goals.jsx";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths: GetStaticPaths = (() => {
+	
+	return [
+		{params: {id: '67cea80f2c143f352d4d7d22'}}
+	];
+}) satisfies GetStaticPaths;
+
+const {id} = Astro.params
+---
+<LayoutUserApplication>
+  <GoalsSection client:load id={id}/>
+</LayoutUserApplication>

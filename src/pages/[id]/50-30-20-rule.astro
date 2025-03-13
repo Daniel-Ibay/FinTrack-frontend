@@ -1,0 +1,16 @@
+---
+import LayoutUserApplication from "@/layouts/LayoutUserApplication.astro";
+import Rule from "@/components/app-user/50-30-20.jsx"
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths: GetStaticPaths = (() => {
+	
+	return [
+		{params: {id: '67cea80f2c143f352d4d7d22'}}
+	];
+}) satisfies GetStaticPaths;
+---
+
+<LayoutUserApplication>
+  <Rule client:load />
+</LayoutUserApplication>

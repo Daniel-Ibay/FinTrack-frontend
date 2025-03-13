@@ -1,0 +1,31 @@
+{
+  "name": "finances-personal-tracker",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/vercel": "^8.1.2",
+    "@nanostores/react": "^0.8.4",
+    "@tailwindcss/vite": "^4.0.11",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "astro": "^5.3.0",
+    "nanostores": "^0.11.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "recharts": "^2.15.1",
+    "tailwindcss": "^4.0.11",
+    "uuid": "^11.1.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
+}

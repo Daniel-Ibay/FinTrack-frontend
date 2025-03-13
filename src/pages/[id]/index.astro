@@ -1,0 +1,29 @@
+---
+import LayoutUserApplication from "@/layouts/LayoutUserApplication.astro"
+import type { GetStaticPaths } from "astro";
+import { getUsers } from "@/utils/users";
+
+type User = {
+  id: string;
+  username: string;
+};
+
+
+export const getStaticPaths: GetStaticPaths = (async() => {
+	
+	const users: User[] = await getUsers()
+
+	// Generar las rutas a partir de los ids
+	const paths = users.map(user => ({
+		params: { id: user.id },
+	}));
+
+	return paths;
+
+}) satisfies GetStaticPaths;
+---
+<LayoutUserApplication>
+    <div class="h-full">
+  
+    </div>
+</LayoutUserApplication>
